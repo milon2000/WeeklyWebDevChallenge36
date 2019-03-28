@@ -30,8 +30,6 @@ h1 {
 
 h3 {
   font-size: 30px;
-  margin-bottom: 60px;
-
 }
 p {
 	margin-bottom: 1.5em;
@@ -47,13 +45,18 @@ Colors
 --------------------------------------------------------------*/
 .menu a:link,
 .home-link a,
-.aside-flex ul {
+.aside-flex ul,
+.tags p,
+ul,
+.gallery-description p:nth-child(2) {
   color: #9c9c9c;
 }
+
 
 .menu a:hover {
   color: #000000;
 }
+
 /*--------------------------------------------------------------
 General styling
 --------------------------------------------------------------*/
@@ -142,7 +145,6 @@ Grid
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 9fr 1fr 1fr;
-  margin: 5em;
 }
 
 .gallery-img {
@@ -178,10 +180,64 @@ Grid
   padding-top: 3em;
 }
 
+.gallery-description p:nth-child(2) {
+  font-size: 16px;
+}
+
+.gallery-description p:first-child {
+  font-weight: bold;
+}
+/*--------------------------------------------------------------
+Discount
+--------------------------------------------------------------*/
+
+.discount {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+}
+
+.newsletter {
+  display: flex;
+}
+
+.discount-title {
+  font-family: 'Charm', cursive;
+  font-size: 3em;
+}
+
+/*--------------------------------------------------------------
+Aside
+--------------------------------------------------------------*/
+
+.sorting {
+  margin-left: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+}
+
+.price,
+.color,
+.dots,
+.size {
+  margin: 2em 0 2em 0;
+}
+
+.tags p {
+  width: 80%;
+}
 /*--------------------------------------------------------------
 Gallery-items
 --------------------------------------------------------------*/
 
+.gallery {
+  margin-top: 3em;
+  margin-right: 5em;
+  margin-bottom: 3em;
+}
 
 .gallery-item img:last-child {
   display: none;
